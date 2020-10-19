@@ -13,8 +13,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div padding>
+   <p>{{text}}</p>
+   <ion-button (click)="open_Page()" expand="block"> click (open page ) </ion-button>
+   <ion-button routerLink="/details" expand="block" > click (open page ) with router</ion-button>
   </div>
 </ion-content>
